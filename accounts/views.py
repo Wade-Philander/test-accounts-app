@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Product, Order, Customer
 
-
 # Create your views here.
 
 def home(request):
@@ -31,6 +30,7 @@ def products(request):
     return render(request,'accounts/products.html',{'products':products})
 
 def customers(request, pk_test):
+
     customers = Customer.objects.get(id=pk_test)
     orders = customers.order_set.all()
     order_count = orders.count()

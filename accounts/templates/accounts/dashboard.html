@@ -15,13 +15,15 @@
             </a>
             <table class="table table-sm">
                 <tr>
+                    <th></th>
                     <th>Customer</th>
                     <th>phone</th>
                 </tr>
 
-                {% for customer in customers%}
+                {% for customer in customers %}
 
                 <tr>
+                    <td><a href="{% url 'customers' customers.id%}"> View </a></td>
                     <td>{{ customer.name }}</td>
                     <td>{{ customer.phone }}</td>
                 </tr>
