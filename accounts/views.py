@@ -172,3 +172,5 @@ def deleteOrder(request, pk):
         return redirect('/')
     context = {'item':order} 
     return render(request, 'accounts/delete.html', context)
+
+#niks
