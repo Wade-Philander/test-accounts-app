@@ -19,6 +19,7 @@ class TestCMRApp(StaticLiveServerTestCase):
         self.browser.close()
 
     # TEST LOGIN FORM 
+    #zxcvgbhjkllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
 
     def TestIfCustomerExist(self):
         self.browser.get(self.live_server_url)
@@ -48,6 +49,5 @@ class TestCMRApp(StaticLiveServerTestCase):
     def TestCustomerRegisterForm(self):
         self.username = WebDriver(self.browser.find_element_by_id('id_username'))
         
-
         self.email = WebDriver(self.browser.find_element_by_id('id_password1'))
         
