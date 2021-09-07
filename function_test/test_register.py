@@ -36,18 +36,18 @@ class TestCMRApp(StaticLiveServerTestCase):
             'Login successfully'
         )
 
-    def TestCustomerLoginForm(self):
-        # username = self.browser.find_element_by_name('username')
-        self.username = WebDriver(self.browser.find_element_by_name('username'))
+    # def TestCustomerLoginForm(self):
+    #     # username = self.browser.find_element_by_name('username')
+    #     self.username = WebDriver(self.browser.find_element_by_name('username'))
         
-        print("username working")
+    #     print("username working")
 
-        self.password = WebDriver(self.browser.find_element_by_name('password'))
-        print("pass working")
+    #     self.password = WebDriver(self.browser.find_element_by_name('password'))
+    #     print("pass working")
 
-        submit = WebDriver(self.browser.find_element_by_class_name('login_btn'))
-        submit.click()
-        print("clicking")
+    #     submit = WebDriver(self.browser.find_element_by_class_name('login_btn'))
+    #     submit.click()
+    #     print("clicking")
 
     # def TestCustomerRegisterForm(self):
     #     self.username = WebDriver(self.browser.find_element_by_id('id_username'))
@@ -79,4 +79,14 @@ class TestCMRApp(StaticLiveServerTestCase):
             except Exception as err:
                 print(err)
                 
-            time.sleep(2000)
+            time.sleep(1000)
+
+
+        # def logout_of_app(self):
+        #     pass
+
+        # def update_current_customer_order(self):
+        #     pass
+
+        # def delete_customers_current_order(self):
+        #     pass
